@@ -117,6 +117,10 @@ main{
   right: 20px;
   top: -15px;
 }
+.info-articulo i:hover{
+  transition: all 600ms;
+  transform:rotate(-90deg)
+}
 .titular-ofertas, .titular-last-visit{
   font-size: 24px;
   color: #666;
@@ -127,17 +131,24 @@ main{
 .descuento{
   color: #39b54a;
   width: 70%;
+  text-align: center;
 }
 .description{
-  display: none;
   margin-top: 16px;
-  color: #666;
+  color: #FFF;
 }
 .precio{
   font-size: 18px;
   width: 30%;
 }
-
+.producto:hover .description{
+  transition: all 600ms;
+  color: #666;
+}
+.producto:hover{
+  transition: all 600ms;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 footer{
   padding-top: 15px;
 }
@@ -197,7 +208,7 @@ footer h4{
 }
 .register button:hover{
   transition: all 600ms;
-  background-color: #1259c3;
+  background-color: #0022AA;
   color: #ebebeb;
 }
 .error{
@@ -253,13 +264,9 @@ footer h4{
     margin-bottom: 15px;
   }
   .producto{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 45%;
     margin: 10px 8px;
   }
- .description{
-   display: block;
- }
 
 }
 
@@ -284,6 +291,17 @@ footer h4{
   .intereses label{
     position: relative;
     left: 50px;
+  }
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info-footer{
+    width: 33%;
+  }
+  .info-footer i:hover{
+    transition: all 600ms;
+    color: goldenrod;
   }
 }
 /*

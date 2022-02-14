@@ -80,6 +80,12 @@ main{
   align-items: center;
   background-color: #ebebeb;
 }
+.banner{
+ width: 100%;
+}
+.banner img{
+  width: 100%;
+}
 .last-visit, .offers{
   width: 90vw;
 }

@@ -1,0 +1,290 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Roboto', sans-serif;
+}
+p{
+  font-size: 12px;
+}
+
+header{
+  background-color:#EAC926;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logo-pagina{
+  width: 50%;
+}
+.logo-pagina img{
+  width: 50%;
+}
+.buscador{
+  width: 50%;
+}
+.buscador input{
+  width: 90%;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+}
+.buscador button{
+  width: 10%;
+  height: 5vh;
+  margin-left: -18px;
+  border: none;
+  border-radius: 5px;
+}
+.frase{
+  width: 100%;
+}
+.frase p{
+  text-align: center;
+  font-weight: bolder;
+}
+header nav{
+  margin: 25px 0px;
+}
+.nav-site{
+  display: none;
+}
+.nav-user{
+  display: none;
+}
+.nav-user ul li, .nav-site ul li{
+  margin: 0px 10px;
+}
+.nav-site ul li a, .nav-user ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.burger-menu{
+width: 100%;
+}
+.burger-menu i{
+  background-color:#1259c3;
+  color: #FFF;
+  padding: 9px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+}
+.last-visit, .offers{
+  width: 90vw;
+}
+.producto{
+  margin: 10px 0px;
+  background-color: #FFF;
+}
+.producto img{
+  width: 100%;
+}
+.info-articulo{
+  border-top: #ebebeb solid 1px;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-articulo i{
+  color:#39b54a;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.titular-ofertas, .titular-last-visit{
+  font-size: 24px;
+  color: #666;
+}
+.descuento, .description{
+ font-size: 16px;
+}
+.descuento{
+  color: #39b54a;
+  width: 70%;
+}
+.description{
+  display: none;
+  margin-top: 16px;
+  color: #666;
+}
+.precio{
+  font-size: 18px;
+  width: 30%;
+}
+
+footer{
+  padding-top: 15px;
+}
+.info-footer{
+  text-align: center;
+}
+.info-footer i{
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+footer h4{
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+  font-weight: lighter;
+}
+
+/*LOGIN & REGISTER*/
+.register{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.register div{
+  margin: 10px 0px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.register div label{
+  width: 100%;
+  margin: 10px 0px;
+}
+.register .intereses label{
+ position: relative;
+ bottom: 25px;
+}
+.register div input:hover{
+  transition: all 600ms;
+  background-color: #a7a7a799;
+}
+.register div input[type=text], .register div input[type=password]{
+  border: none;
+  border-radius: 5px;
+  height: 4vh;
+  box-shadow: 0px 0px 3px rgb(100, 100, 100);
+}
+.register button{
+  margin: 10px 10px;
+  border-radius: 3px;
+  height: 5vh;
+  padding: 0px 10px;
+  border: none;
+  background-color: #a7a7a799;
+}
+.register button:hover{
+  transition: all 600ms;
+  background-color: #1259c3;
+  color: #ebebeb;
+}
+.error{
+  margin: 15px 0px;
+
+}
+.error h2{
+  color: #32a341;
+  font-weight: bold;
+}
+.error p{
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+/*TABLETS*/
+@media(min-width: 361px){
+  .logo-pagina{
+    width: 30%;
+  }
+  .buscador{
+    width: 40%;
+  }
+  .frase{
+    width: 30%;
+  }
+  header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-site, .nav-user{
+    display: flex;
+  }
+  .nav-site ul, .nav-user ul{
+    display: flex;
+    list-style-type: none;
+  }
+  .nav-site ul li, .nav-user ul li{
+    font-size: 10px;
+  }
+  .burger-menu{
+    display: none;
+  }
+  .last-visit, .offers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+  .titular{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .producto{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+    margin: 10px 8px;
+  }
+ .description{
+   display: block;
+ }
+
+}
+
+/*DESKTOP*/
+@media(min-width: 769px){
+  .producto{
+    width: 23%;
+  }
+  .register{
+    display: block;
+  }
+  .register div label{
+    text-align: center;
+    font-weight: bold;
+  }
+  .register div input[type=text], .register div input[type=password]{
+    width: 40%;
+  }
+  .register .perfil-usuario{
+    padding: 15px;
+  }
+  .intereses label{
+    position: relative;
+    left: 50px;
+  }
+}
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
